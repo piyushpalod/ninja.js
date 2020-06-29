@@ -15,17 +15,9 @@ const Page = (props) => {
     event.preventDefault()
     onChange(pageNumber)
   }
-
-  if (isActivePage()) {
-    return(
-      <li className="page-item mr-1">
-        <button className="page-link button-outline" onClick={click} >{renderedPageNumber()}</button>
-      </li>
-    )
-  }
   return(
     <li className="page-item mr-1">
-      <button className="page-link" onClick={click} >{renderedPageNumber()}</button>
+      <button className={`page-link ${isActivePage() ? "button-outline" : ""}`} onClick={click} >{renderedPageNumber()}</button>
     </li>
   )
 }
