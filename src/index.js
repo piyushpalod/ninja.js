@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import userMockData from './MockData/userMockData.json'
 
-var userData = JSON.parse(document.getElementById('user-data').dataset.users);
-ReactDOM.render(<App rows={userData} />, document.getElementById('root'));
+ReactDOM.render(<App rows={userMockData} />, document.getElementById('root'));
