@@ -1,15 +1,15 @@
 .mt-3 {
-  margin-top: 2rem;
+  margin-top: 2rem
 }
 
 .mr-1 {
-  margin-right: .5rem;
+  margin-right: .5rem
 }
 
 .pagination {
-  list-style: none;
+  list-style: none
 }
 
 .pagination li {
-  display: inline-block;
+  display: inline-block
 }
